@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  BudgetApp
+//  Budget
 //
 //  Created by Nishant Tharani on 2/1/24.
 //

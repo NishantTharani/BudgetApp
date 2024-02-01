@@ -1,13 +1,13 @@
 //
-//  BudgetAppUITestsLaunchTests.swift
-//  BudgetAppUITests
+//  BudgetUITestsLaunchTests.swift
+//  BudgetUITests
 //
 //  Created by Nishant Tharani on 2/1/24.
 //
 
 import XCTest
 
-final class BudgetAppUITestsLaunchTests: XCTestCase {
+final class BudgetUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

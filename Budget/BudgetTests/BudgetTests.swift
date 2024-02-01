@@ -1,14 +1,14 @@
 //
-//  BudgetAppTests.swift
-//  BudgetAppTests
+//  BudgetTests.swift
+//  BudgetTests
 //
 //  Created by Nishant Tharani on 2/1/24.
 //
 
 import XCTest
-@testable import BudgetApp
+@testable import Budget
 
-final class BudgetAppTests: XCTestCase {
+final class BudgetTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

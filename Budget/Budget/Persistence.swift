@@ -1,6 +1,6 @@
 //
 //  Persistence.swift
-//  BudgetApp
+//  Budget
 //
 //  Created by Nishant Tharani on 2/1/24.
 //
@@ -31,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "BudgetApp")
+        container = NSPersistentContainer(name: "Budget")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
