@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-struct BudgetCategory: Identifiable, Codable {
+@Model
+final class BudgetCategory {
     var id = UUID()
     var name: String
     var previousBalance: Decimal
@@ -15,8 +17,15 @@ struct BudgetCategory: Identifiable, Codable {
     var carryOverOption: CarryOverOption
 
     enum CarryOverOption: String, Codable, CaseIterable {
-        case carryOver = "Carry Over"
-        case discard = "Discard"
-        case apply = "Apply"
+        case carry = "CARRYOVER_CARRY"
+        case discard = "CARRYOVER_DISCARD"
+        case apply = "CARRYOVER_APPLY"
+    }
+    
+    init(name: String, previousBalance: Decimal, amountAllocated: Decimal, carryOverOption: CarryOverOption) {
+        self.name = name
+        self.previousBalance = previousBalance
+        self.amountAllocated = amountAllocated
+        self.carryOverOption = carryOverOption
     }
 }

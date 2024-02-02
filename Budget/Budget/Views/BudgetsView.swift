@@ -32,6 +32,3 @@ struct BudgetsView_Previews: PreviewProvider {
     }
 }
 
-#Preview {
-    BudgetsView()
-}

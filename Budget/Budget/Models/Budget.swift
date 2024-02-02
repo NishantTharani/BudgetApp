@@ -6,10 +6,23 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Budget: Identifiable, Codable {
-    var id = UUID()
-    var month: Date
+@Model
+final class Budget {
+    var monthIdx: Int32
     var categories: [BudgetCategory]
-    var totalAvailable: Decimal
+    var userAllocatedAmount: Decimal
+    var unallocatedAmount: Decimal
+    
+    // Decimal carriedOverAmount
+    // Decimal totalAllocatedAmount
+    
+    init(monthIdx: Int32, categories: [BudgetCategory], userAllocatedAmount: Decimal, unallocatedAmount: Decimal) {
+        self.monthIdx = monthIdx
+        self.categories = categories
+        self.userAllocatedAmount = userAllocatedAmount
+        self.unallocatedAmount = unallocatedAmount
+    }
+    
 }

@@ -20,6 +20,9 @@
 		CE05D70B2B6C2E37005A4577 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05D70A2B6C2E37005A4577 /* Transaction.swift */; };
 		CE05D70D2B6C2E5E005A4577 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05D70C2B6C2E5E005A4577 /* Budget.swift */; };
 		CE05D70F2B6C54E0005A4577 /* BudgetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05D70E2B6C54E0005A4577 /* BudgetsView.swift */; };
+		CEA92CD82B6C5F220048B1E3 /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92CD72B6C5F220048B1E3 /* BudgetViewModel.swift */; };
+		CEA92CDB2B6C64F20048B1E3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA92CDA2B6C64F20048B1E3 /* utils.swift */; };
+		CEC2CD822B6C6F6400D50706 /* Budget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEC2CD802B6C6F6400D50706 /* Budget.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		CE05D70A2B6C2E37005A4577 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		CE05D70C2B6C2E5E005A4577 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		CE05D70E2B6C54E0005A4577 /* BudgetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsView.swift; sourceTree = "<group>"; };
+		CEA92CD72B6C5F220048B1E3 /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		CEA92CDA2B6C64F20048B1E3 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		CEC2CD812B6C6F6400D50706 /* Budget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Budget.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 		CE05D6D42B6C2AF0005A4577 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2CD802B6C6F6400D50706 /* Budget.xcdatamodeld */,
+				CEA92CD92B6C64EA0048B1E3 /* Utils */,
 				CE05D7072B6C2B71005A4577 /* Helpers */,
 				CE05D7062B6C2B6B005A4577 /* ViewModels */,
 				CE05D7052B6C2B52005A4577 /* Views */,
@@ -166,6 +174,7 @@
 		CE05D7062B6C2B6B005A4577 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CEA92CD72B6C5F220048B1E3 /* BudgetViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +184,14 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CEA92CD92B6C64EA0048B1E3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEA92CDA2B6C64F20048B1E3 /* utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +329,10 @@
 				CE05D70B2B6C2E37005A4577 /* Transaction.swift in Sources */,
 				CE05D6D82B6C2AF0005A4577 /* ContentView.swift in Sources */,
 				CE05D6E22B6C2AF0005A4577 /* Budget.xcdatamodeld in Sources */,
+				CEA92CDB2B6C64F20048B1E3 /* utils.swift in Sources */,
 				CE05D70F2B6C54E0005A4577 /* BudgetsView.swift in Sources */,
+				CEA92CD82B6C5F220048B1E3 /* BudgetViewModel.swift in Sources */,
+				CEC2CD822B6C6F6400D50706 /* Budget.xcdatamodeld in Sources */,
 				CE05D70D2B6C2E5E005A4577 /* Budget.swift in Sources */,
 				CE05D6D62B6C2AF0005A4577 /* BudgetApp.swift in Sources */,
 			);
@@ -652,6 +672,16 @@
 				CE05D6E12B6C2AF0005A4577 /* Budget.xcdatamodel */,
 			);
 			currentVersion = CE05D6E12B6C2AF0005A4577 /* Budget.xcdatamodel */;
+			path = Budget.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CEC2CD802B6C6F6400D50706 /* Budget.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEC2CD812B6C6F6400D50706 /* Budget.xcdatamodel */,
+			);
+			currentVersion = CEC2CD812B6C6F6400D50706 /* Budget.xcdatamodel */;
 			path = Budget.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
